@@ -1,0 +1,8 @@
+version: '3.4'
+services:
+  dhcpproxy_netboot:
+    container_name: dhcpproxy_netboot
+    build: .
+    network_mode: host
+    environment:
+      - SUBNET=192.168.2.0
